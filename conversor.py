@@ -1,23 +1,23 @@
-from PIL import Image
-from tkinter.filedialog import askopenfilename
-from tkinter.filedialog import asksaveasfilename
-from tkinter import messagebox as MessageBox
-import pathlib
-import os
+from PIL import Image # proporciona una clase con el mismo nombre que se utiliza para representar una imagen PIL. 
+from tkinter.filedialog import askopenfilename #selecciona la ruta de archivos
+from tkinter.filedialog import asksaveasfilename #guarda la ruta de archivos
+from tkinter import messagebox as MessageBox #cuadro de dialogo para informar al usuario sobre alguna cuestión
+import pathlib #Ofrece un nivel mas alto en la interfaz
+import os #El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
 
-class Conversor:
+class Conversor: # Clase conversor donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
 
     
 
-    def convertirApng(self, rutaOrigen,nombreArchivo):
-        imagenIn = Image.open(rutaOrigen)
-        rgb_im = imagenIn.convert('RGB')    
-        rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".png",defaultextension=".png",filetypes = (("png files","*.png"),("all files","*.*")))
+    def convertirApng(self, rutaOrigen,nombreArchivo): #En este metodo para convertir a png
+        imagenIn = Image.open(rutaOrigen) #Abre he identifica el archivo de imagen dado
+        rgb_im = imagenIn.convert('RGB')    #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero).
+        rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".png",defaultextension=".png",filetypes = (("png files","*.png"),("all files","*.*")))#Aqui guardamos la ruta del archivo con la extension o tipo de archivo dado
 
-        path = pathlib.Path(rutaDestino)        
+        path = pathlib.Path(rutaDestino)    #Aqui buscamos la ruta del sistema de archivos    
         ext=path.suffix
 
-        if rutaDestino:
+        if rutaDestino: # Esta es la condicion para que realice la operacion si es png sino botara unos errores o no se realiza la conversion 
             
             if ext == ".png":
                 rgb_im.save(rutaDestino, quality=95)                
@@ -29,15 +29,15 @@ class Conversor:
         else:
             MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 
-    def convertirAjpg(self, rutaOrigen,nombreArchivo):
-        imagenIn = Image.open(rutaOrigen)
-        rgb_im = imagenIn.convert('RGB')
+    def convertirAjpg(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a jpg
+        imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
+        rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero).
         rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".jpg",defaultextension=".jpg",filetypes = (("jpeg files","*.jpg"),("all files","*.*")))
 
-        path = pathlib.Path(rutaDestino)        
+        path = pathlib.Path(rutaDestino)    #Aqui buscamos la ruta del sistema de archivos     
         ext=path.suffix
 
-        if rutaDestino:
+        if rutaDestino: #Esta es la condicion para que realice la operacion si es jpg sino botara unos errores o no se realiza la conversion
             
             if ext == ".jpg":
                 rgb_im.save(rutaDestino, quality=95)                
@@ -50,16 +50,16 @@ class Conversor:
             MessageBox.showinfo("Informacion", "No se convirtio la imagen")
            
         
-    def convertirAgif(self, rutaOrigen,nombreArchivo):
-        imagenIn = Image.open(rutaOrigen)
-        rgb_im = imagenIn.convert('RGB')
+    def convertirAgif(self, rutaOrigen,nombreArchivo):#Este metodo es para convertir la imagen a gif
+        imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
+        rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero)
         rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".gif",defaultextension=".gif",filetypes = (("gif files","*.gif"),("all files","*.*")))
         print("hola "+rutaDestino)
 
-        path = pathlib.Path(rutaDestino)        
+        path = pathlib.Path(rutaDestino)       #Aqui buscamos la ruta del sistema de archivos   
         ext=path.suffix
 
-        if rutaDestino:
+        if rutaDestino: #Esta es la condicion para que realice la operacion si es gif sino botara unos errores o no se realiza la conversion
             
             if ext == ".gif":
                 rgb_im.save(rutaDestino, quality=95)                
@@ -72,15 +72,15 @@ class Conversor:
             MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 
         
-    def convertirAbmp(self, rutaOrigen,nombreArchivo):
-        imagenIn = Image.open(rutaOrigen)
-        rgb_im = imagenIn.convert('RGB')
+    def convertirAbmp(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a bmp
+        imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
+        rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero)
         rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".bmp",defaultextension=".bmp",filetypes = (("bmp files","*.bmp"),("all files","*.*")))
 
-        path = pathlib.Path(rutaDestino)        
+        path = pathlib.Path(rutaDestino)       #Aqui buscamos la ruta del sistema de archivos    
         ext=path.suffix
 
-        if rutaDestino:
+        if rutaDestino: #Esta es la condicion para que realice la operacion si es gif sino botara unos errores o no se realiza la conversion
             
             if ext == ".bmp":
                 rgb_im.save(rutaDestino, quality=95)                
@@ -94,7 +94,7 @@ class Conversor:
             
 
 
-    def seleccionarImagen(self,txt,combo):
+    def seleccionarImagen(self,txt,combo): #Metodo para seleccionar la imagen
 
 
         txt.config(state="normal")
@@ -131,7 +131,7 @@ class Conversor:
     
         
 
-    def convertirImagen(self,combo):
+    def convertirImagen(self,combo): #Metodo para convertir imagen 
 
         extAconvertir=combo.get()
 
