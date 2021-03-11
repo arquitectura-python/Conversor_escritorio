@@ -26,7 +26,7 @@
     Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
 	
 	
-   **Metodos que se trabajaran en la clase Conversor 
+   Metodos que se trabajaran en la clase Conversor 
    
      * convertirApng
      * convertirAjpg
@@ -35,92 +35,92 @@
      * seleccionarImagen
      * convertirImagen
 	
-   **Metodo de convertir a PNG (convertirApng)
+   Metodo de convertir a PNG (convertirApng)
 	
-		def convertirApng(self, rutaOrigen,nombreArchivo): #En este metodo para convertir a png
-     			imagenIn = Image.open(rutaOrigen) #Abre he identifica el archivo de imagen dado
-        	   	rgb_im = imagenIn.convert('RGB')    #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero).
-        		rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".png",defaultextension=".png",filetypes = (("png 			       files","*.png"),("all files","*.*")))#Aqui guardamos la ruta del archivo con la extension o tipo de archivo dado
+	def convertirApng(self, rutaOrigen,nombreArchivo): #En este metodo para convertir a png
+     		imagenIn = Image.open(rutaOrigen) #Abre he identifica el archivo de imagen dado
+        	rgb_im = imagenIn.convert('RGB')    #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero).
+        	rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".png",defaultextension=".png",filetypes = (("png 			files","*.png"),("all files","*.*")))#Aqui guardamos la ruta del archivo con la extension o tipo de archivo dado
 
-       		path = pathlib.Path(rutaDestino)    #Aqui buscamos la ruta del sistema de archivos    
+       	path = pathlib.Path(rutaDestino)    #Aqui buscamos la ruta del sistema de archivos    
         	ext=path.suffix
 
-       	 	if rutaDestino: # Esta es la condicion para que realice la operacion si es png sino botara unos errores o no se realiza la conversion 
+       	 if rutaDestino: # Esta es la condicion para que realice la operacion si es png sino botara unos errores o no se realiza la conversion 
             
-            	if ext == ".png":
-                rgb_im.save(rutaDestino, quality=95)                
-                os.startfile(rutaDestino)
+         if ext == ".png":
+         rgb_im.save(rutaDestino, quality=95)                
+         os.startfile(rutaDestino)
                 
             else:
                 MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
 
         	else:
-            		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
+            	    MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 	
-   **Metodo de convertir a JPG (convertirAjpg)
+   Metodo de convertir a JPG (convertirAjpg)
 	
-		def convertirAjpg(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a jpg
-       			imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
-        		rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero).
-        		rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".jpg",defaultextension=".jpg",filetypes =(("jpeg 			       files","*.jpg"),("all files","*.*")))
+	def convertirAjpg(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a jpg
+       		imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
+        	rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero).
+        	rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".jpg",defaultextension=".jpg",filetypes =(("jpeg 			files","*.jpg"),("all files","*.*")))
 
-        	path = pathlib.Path(rutaDestino)    #Aqui buscamos la ruta del sistema de archivos     
-        	ext=path.suffix
+        path = pathlib.Path(rutaDestino)    #Aqui buscamos la ruta del sistema de archivos     
+        ext=path.suffix
 
-        	if rutaDestino: #Esta es la condicion para que realice la operacion si es jpg sino botara unos errores o no se realiza la conversion
+        if rutaDestino: #Esta es la condicion para que realice la operacion si es jpg sino botara unos errores o no se realiza la conversion
             
-            	if ext == ".jpg":
-                rgb_im.save(rutaDestino, quality=95)                
-                os.startfile(rutaDestino)
+        if ext == ".jpg":
+        rgb_im.save(rutaDestino, quality=95)                
+        os.startfile(rutaDestino)
                 
-            else:
-                MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
+        else:
+             MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
 
-        	else:
-            		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
+        else:
+            	MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 			
-   **Metodo de convertir a BMP (convertirAbmp)
+   Metodo de convertir a BMP (convertirAbmp)
 	
-		def convertirAbmp(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a bmp
-        		imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
-        		rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero)
-        		rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".bmp",defaultextension=".bmp",filetypes = (("bmp 				files","*.bmp"),("all files","*.*")))
+	def convertirAbmp(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a bmp
+        	imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
+        	rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero)
+        	rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".bmp",defaultextension=".bmp",filetypes = (("bmp 			files","*.bmp"),("all files","*.*")))
 
-        	path = pathlib.Path(rutaDestino)       #Aqui buscamos la ruta del sistema de archivos    
-        	ext=path.suffix
+        path = pathlib.Path(rutaDestino)       #Aqui buscamos la ruta del sistema de archivos    
+        ext=path.suffix
 
-        	if rutaDestino: #Esta es la condicion para que realice la operacion si es gif sino botara unos errores o no se realiza la conversion
+        if rutaDestino: #Esta es la condicion para que realice la operacion si es gif sino botara unos errores o no se realiza la conversion
             
-            	if ext == ".bmp":
-                rgb_im.save(rutaDestino, quality=95)                
-                os.startfile(rutaDestino)
+        if ext == ".bmp":
+        rgb_im.save(rutaDestino, quality=95)                
+        os.startfile(rutaDestino)
                 
-            	else:
-                	MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
+        else:
+            MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
 
-        	else:
-            		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
+        else:
+            MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 	
-   **Metodo de convertir a GIF (convertirAgif)
+   Metodo de convertir a GIF (convertirAgif)
 	
-	 	def convertirAgif(self, rutaOrigen,nombreArchivo):#Este metodo es para convertir la imagen a gif
-        		imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
-        		rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero)
-       			rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".gif",defaultextension=".gif",filetypes = (("gif 			       files","*.gif"),("all files","*.*")))
+	def convertirAgif(self, rutaOrigen,nombreArchivo):#Este metodo es para convertir la imagen a gif
+        	imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
+        	rgb_im = imagenIn.convert('RGB') #El modo de la imagen se convierte a RGB (Píxeles de 3x8 bits, color verdadero)
+       		rutaDestino = asksaveasfilename(title = "Seleccione donde guardar",initialfile=nombreArchivo+".gif",defaultextension=".gif",filetypes = (("gif 			files","*.gif"),("all files","*.*")))
 			
-        		print("hola "+rutaDestino)
+        print("hola "+rutaDestino)
 
-        		path = pathlib.Path(rutaDestino)       #Aqui buscamos la ruta del sistema de archivos   
-        		ext=path.suffix
+        path = pathlib.Path(rutaDestino) #Aqui buscamos la ruta del sistema de archivos   
+        ext=path.suffix
 
-        		if rutaDestino: #Esta es la condicion para que realice la operacion si es gif sino botara unos errores o no se realiza la conversion
+        if rutaDestino: #Esta es la condicion para que realice la operacion si es gif sino botara unos errores o no se realiza la conversion
             
-            		if ext == ".gif":
-                	rgb_im.save(rutaDestino, quality=95)                
-                	os.startfile(rutaDestino)
+        if ext == ".gif":
+        rgb_im.save(rutaDestino, quality=95)                
+        os.startfile(rutaDestino)
                 
-            	else:
-                	MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
+        else:
+            MessageBox.showerror("Error", "Ha ocurrido un error por favor no modifique la extension.")
 
-        	else:
-            		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
+        else:
+            MessageBox.showinfo("Informacion", "No se convirtio la imagen")
