@@ -13,7 +13,7 @@
   **TKINTER**
   * Es una libreria grafica TcL/tk para el lenguaje de programación python. Se considera un estandar para la interfaz grafica de usuario(GUI) y es el que viene por       defecto para python para microsoft windows 
       
-    ***Comentarios Código Aplicación Shell Lenguaje Python
+    Comentarios Código Aplicación Shell Lenguaje Python
 
      * **from PIL import Image** en esta linea de codigo se esta importando la libreria Pil la cual se trabajara en el backend de la aplicación, 
      * **from tkinter.filedialog import askopenfilename** selecciona la ruta de archivos
@@ -23,17 +23,17 @@
      * **import os** El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren información 
        sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
 	
-Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
+    Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
 	
 	
    **Metodos que se trabajaran en la clase Conversor 
-	
-	* convertirApng
-	* convertirAjpg
-	* convertirAgif
-	* convertirAbmp
-	* seleccionarImagen
-	* convertirImagen
+   
+     * convertirApng
+     * convertirAjpg
+     * convertirAgif
+     * convertirAbmp
+     * seleccionarImagen
+     * convertirImagen
 	
    **Metodo de convertir a PNG (convertirApng)
 	
