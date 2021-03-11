@@ -11,8 +11,10 @@
          Para instalar pillow en nuestra aplicación de python utilizamos el comando **pip install pillow**
       
        * *TKINTER
-       * 
+       * Es una libreria grafica TcL/tk para el lenguaje de programación python. Se considera un estandar para la interfaz grafica de usuario(GUI) y es el que
+         viene por defecto para python para microsoft windows 
       
      	* **Comentarios Código Aplicación Shell Lenguaje Python
+     	
 
 						
