@@ -25,5 +25,19 @@
 	**import os
 	
 	Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
-
+	
+	
+	**Metodos que se trabajaran en la clase Conversor 
+	
+	*convertirApng
+	*convertirAjpg
+	*convertirAgif
+	*convertirAbmp
+	*seleccionarImagen
+	*convertirImagen
+	
+	
+	
+	
+	
 						
