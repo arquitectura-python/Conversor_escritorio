@@ -25,19 +25,19 @@
 	**import os** El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren 
 	información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
 	
-	Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
+Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
 	
 	
-	**Metodos que se trabajaran en la clase Conversor 
+   **Metodos que se trabajaran en la clase Conversor 
 	
-	convertirApng
-	convertirAjpg
-	convertirAgif
-	convertirAbmp
-	seleccionarImagen
-	convertirImagen
+	* convertirApng
+	* convertirAjpg
+	* convertirAgif
+	* convertirAbmp
+	* seleccionarImagen
+	* convertirImagen
 	
-	**Metodo de convertir a PNG (convertirApng)
+   **Metodo de convertir a PNG (convertirApng)
 	
 		def convertirApng(self, rutaOrigen,nombreArchivo): #En este metodo para convertir a png
      			imagenIn = Image.open(rutaOrigen) #Abre he identifica el archivo de imagen dado
@@ -59,7 +59,7 @@
         	else:
             		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 	
-	**Metodo de convertir a JPG (convertirAjpg)
+   **Metodo de convertir a JPG (convertirAjpg)
 	
 		def convertirAjpg(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a jpg
        			imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
@@ -81,7 +81,7 @@
         	else:
             		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 			
-	**Metodo de convertir a BMP (convertirAbmp)
+   **Metodo de convertir a BMP (convertirAbmp)
 	
 		def convertirAbmp(self, rutaOrigen,nombreArchivo): #Este metodo es para convertir la imagen a bmp
         		imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
@@ -103,7 +103,7 @@
         	else:
             		MessageBox.showinfo("Informacion", "No se convirtio la imagen")
 	
-	**Metodo de convertir a GIF (convertirAgif)
+   **Metodo de convertir a GIF (convertirAgif)
 	
 	 	def convertirAgif(self, rutaOrigen,nombreArchivo):#Este metodo es para convertir la imagen a gif
         		imagenIn = Image.open(rutaOrigen) #Abre e identifica el archivo de imagen dado
