@@ -18,11 +18,12 @@
      	* **Comentarios Código Aplicación Shell Lenguaje Python
 
 	**from PIL import Image** en esta linea de codigo se esta importando la libreria Pil la cual se trabajara en el backend de la aplicación, 
-     	**from tkinter.filedialog import askopenfilename
+     	**from tkinter.filedialog import askopenfilename 
 	**from tkinter.filedialog import asksaveasfilename
-	**from tkinter import messagebox as MessageBox
-	**import pathlib
-	**import os
+	**from tkinter import messagebox as MessageBox 
+	**import pathlib 
+	**import os** El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren 
+	información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
 	
 	Clase donde están las funciones correspondientes para realizar la conversion para el tipo de imagen PNG, JPG, GIF y BMP.
 	
