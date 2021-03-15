@@ -1,21 +1,29 @@
-# Título del Proyecto
+# PYTHON_ESCRITORIO
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Aplicación que nos permite convertir el formato de imagenes JPG, PNG y GIF.)
 
-## Comenzando 🚀
+## Dependencias 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+	Pillow
+	Tkinter
+  Sys
+  SubProcess
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+### Librerias Importadas 📋
+
+Pillow, la biblioteca Python para tratamiento de imágenes
+
+Para instalar pillow en nuestra aplicación de python utilizamos el comando pip install pillow. La libreria pillow se utilizo para convertir las extensiónes de JPG, PNG, BMP, GIF
+
+### Instalación 🔧
+		
+    Entrar al simbolo del sistema
+ 
 
 
-### Pre-requisitos 📋
+TKINTER
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+Tkinter, libreria grafica TcL/tk para el lenguaje de programación python
 
 ### Instalación 🔧
 
