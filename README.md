@@ -4,16 +4,16 @@ Aplicación que nos permite convertir el formato de imagenes JPG, PNG,BMP y GIF.
 
 
 ## Pre-requisitos 📋
-   Python 3
-   Pillow
-   Tkinter
+   * Python 3
+   * Pillow
+   * Tkinter
    
 ## Dependencias 🚀
 
-  Pillow
-  Tkinter
-  Sys
-  SubProcess
+   * Pillow
+   * Tkinter
+   * Sys
+   * SubProcess
 
 ### Librerias Importadas 📋
 
@@ -24,7 +24,7 @@ Tkinter es una biblioteca gráfica Tcl/Tk. Se considera un estándar para la int
 
 ### Instalación 🔧
 
-Pillow en windows
+#### Pillow en windows
     
 Entrar al simbolo del sistema(cmd)
 Con Windows + R y en ejecutar ingresas cmd y posteriormente enter o en el buscador de windows escribes simbolo de sistema y enter.
@@ -34,15 +34,15 @@ Con Windows + R y en ejecutar ingresas cmd y posteriormente enter o en el buscad
 	O bien:
 	pip install Pillow
 	
-Pillow en Linux
+#### Pillow en Linux
 
 La mayoría de las principales distribuciones de Linux, incluidas Fedora, Debian / Ubuntu y ArchLinux, incluyen Pillow en paquetes que anteriormente contenían PIL.
 
-Tkinter en Windows
+#### Tkinter en Windows
 
 Suele venir por defecto en la instalacion de python.
 
-Tkinter en Linux
+#### Tkinter en Linux
 
 Entrar al terminal de comandos
 En el buscador de linux escribes terminal y enter  o presionas Ctrl + Alt + T y asi se abrira.
@@ -54,15 +54,20 @@ En el buscador de linux escribes terminal y enter  o presionas Ctrl + Alt + T y 
 ### Verificar version de python en Windows y Linux 🔧
 
 1. Revisar que versión se esta trabajando de Python, para 
- 
-Windows se utilizad el comando
-Python --version
+
+* En Windows se utilizo el comando
+
+	Python --version
 	
-Linux se utilizad el comando
-Verificar si tiene instalado Python
-Python --version
-Verificar si tiene instalado Python3
-Phython3 --version
+* En Linux se utilizo el comando
+
+	Verificar si tiene instalado Python
+	
+	Python --version
+	
+	Verificar si tiene instalado Python3
+	
+	Phython3 --version
 
 
 ## Construido con 🛠️
@@ -70,8 +75,8 @@ Phython3 --version
 Las herramientas que se utilizarón fuerón
 
 Windows-Linux
-*IDLE de Python-Entorno de Desarrollo
-*PIP como instalador de dependencias 
+* IDLE de Python-Entorno de Desarrollo
+* PIP como instalador de dependencias 
 
 ## Código Aplicación Escritorio
 
@@ -85,13 +90,17 @@ Windows-Linux
 * import subprocess 
 
 ## Iniciar Aplicacion ⚙️
- En windows
- Descarga la carpeta "Python Convertidor de Imagenes Escritorio"
- Ingresa en ella y da doble click en principal.py
+ * En windows:
  
- En Linux 
- Descarga la carpeta "Python Convertidor de Imagenes Escritorio"
- Desde la terminal de linux busca la ruta de la carpeta e ingresa a ella despues escribe python3 principal.py 
+ 	Descarga la carpeta "Python Convertidor de Imagenes Escritorio". 
+	
+	Ingresa en ella y da doble click en principal.py
+ 
+ * En Linux 
+  
+ 	Descarga la carpeta "Python Convertidor de Imagenes Escritorio"
+	
+ 	Desde la terminal de linux busca la ruta de la carpeta e ingresa a ella despues escribe python3 principal.py 
 
 ## Autores ✒️
 
