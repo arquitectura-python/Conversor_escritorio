@@ -1,7 +1,13 @@
 # PYTHON_ESCRITORIO
 
-Aplicación que nos permite convertir el formato de imagenes JPG, PNG y GIF.)
+Aplicación que nos permite convertir el formato de imagenes JPG, PNG,BMP y GIF.)
 
+
+## Pre-requisitos 📋
+   Python 3
+   Pillow
+   Tkinter
+   
 ## Dependencias 🚀
 
   Pillow
@@ -12,19 +18,40 @@ Aplicación que nos permite convertir el formato de imagenes JPG, PNG y GIF.)
 ### Librerias Importadas 📋
 
 Pillow, la biblioteca Python para tratamiento de imágenes
+La libreria pillow se utilizo para convertir las extensiónes de JPG, PNG, BMP, GIF
 
-Para instalar pillow en nuestra aplicación de python utilizamos el comando pip install pillow. La libreria pillow se utilizo para convertir las extensiónes de JPG, PNG, BMP, GIF
-
-### Instalación 🔧
-		
-    Entrar al simbolo del sistema
-    	pip install PIL
- 
-TKINTER
-
-Tkinter, libreria grafica TcL/tk para el lenguaje de programación python
+Tkinter es una biblioteca gráfica Tcl/Tk. Se considera un estándar para la interfaz gráfica de usuario (GUI) para Python
 
 ### Instalación 🔧
+
+Pillow en windows
+    
+Entrar al simbolo del sistema(cmd)
+Con Windows + R y en ejecutar ingresas cmd y posteriormente enter o en el buscador de windows escribes simbolo de sistema y enter.
+    	
+	En ella escribes lo siguiente:
+	pip install PIL
+	O bien:
+	pip install Pillow
+	
+Pillow en Linux
+
+La mayoría de las principales distribuciones de Linux, incluidas Fedora, Debian / Ubuntu y ArchLinux, incluyen Pillow en paquetes que anteriormente contenían PIL.
+
+Tkinter en Windows
+
+Suele venir por defecto en la instalacion de python.
+
+Tkinter en Linux
+
+Entrar al terminal de comandos
+En el buscador de linux escribes terminal y enter  o presionas Ctrl + Alt + T y asi se abrira.
+
+        En ella escribes lo siguiente:
+	sudo apt-get install python3-tk
+
+
+### Verificar version de python en Windows y Linux 🔧
 
 1. Revisar que versión se esta trabajando de Python, para 
  
@@ -32,16 +59,11 @@ Windows se utilizad el comando
 Python --version
 	
 Linux se utilizad el comando
+Verificar si tiene instalado Python
 Python --version
+Verificar si tiene instalado Python3
 Phython3 --version
 
-2. Despues se importa el Tkinter
-
-Windows
-import Tkinter as tk
-
-Linux
-% sudo apt-get install python3-tk
 
 ## Construido con 🛠️
 
@@ -61,6 +83,15 @@ Windows-Linux
 * import pathlib Ofrece un nivel mas alto en la interfaz
 * import os El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
 * import subprocess 
+
+## Iniciar Aplicacion ⚙️
+ En windows
+ Descarga la carpeta "Python Convertidor de Imagenes Escritorio"
+ Ingresa en ella y da doble click en principal.py
+ 
+ En Linux 
+ Descarga la carpeta "Python Convertidor de Imagenes Escritorio"
+ Desde la terminal de linux busca la ruta de la carpeta e ingresa a ella despues escribe python3 principal.py 
 
 ## Autores ✒️
 
