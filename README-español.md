@@ -4,8 +4,8 @@ Aplicación que nos permite convertir el formato de imagenes JPG, PNG y GIF.)
 
 ## Dependencias 🚀
 
-	Pillow
-	Tkinter
+  Pillow
+  Tkinter
   Sys
   SubProcess
 
@@ -18,96 +18,55 @@ Para instalar pillow en nuestra aplicación de python utilizamos el comando pip 
 ### Instalación 🔧
 		
     Entrar al simbolo del sistema
+    	pip install PIL
  
-
-
 TKINTER
 
 Tkinter, libreria grafica TcL/tk para el lenguaje de programación python
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+1. Revisar que versión se esta trabajando de Python, para 
+ 
+Windows se utilizad el comando
+Python --version
+	
+Linux se utilizad el comando
+Python --version
+Phython3 --version
 
-_Dí cómo será ese paso_
+2. Despues se importa el Tkinter
 
-```
-Da un ejemplo
-```
+Windows
+import Tkinter as tk
 
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+Linux
+% sudo apt-get install python3-tk
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+Las herramientas que se utilizarón fuerón
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+Windows-Linux
+*IDLE de Python-Entorno de Desarrollo
+*PIP como instalador de dependencias 
 
-## Contribuyendo 🖇️
+## Código Aplicación Escritorio
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+* from PIL import Image en esta linea de codigo se esta importando la libreria Pil la cual se trabajara en el backend de la aplicación
+* import sys Este módulo provee acceso a algunas variables usadas o mantenidas por el intérprete y a funciones que interactúan fuertemente con el intérprete.
+* from tkinter.filedialog import askopenfilename selecciona la ruta de archivos
+* from tkinter.filedialog import asksaveasfilename guarda la ruta de archivos
+* from tkinter import messagebox as MessageBox cuadro de dialogo para informar al usuario sobre alguna cuestión
+* import pathlib Ofrece un nivel mas alto en la interfaz
+* import os El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
+* import subprocess 
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+* **Juan Pablo Ortiz Jaimes** - *Desarrollador Backend* - https://github.com/JuanPabloOrtizJaimes
+* **Diana Lucia León Figueroa** - *Documentación,Desarrolo Frontend* - https://github.com/kotoko04
+* **Jarbin Stewart** - *Desarrolo Frontend* - https://github.com/jarbirS
+* **Yeison Ferney Osorio Buitrago** - *Documentación* - https://github.com/yeisonosorio
 
 
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
